@@ -132,6 +132,12 @@ td { color: #b9c6d6; }
 .download-card { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; padding: 28px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
 .download-card h2 { margin-top: 0; }
 .status-pill { display: inline-flex; padding: 4px 9px; border: 1px solid rgba(224,173,82,.35); border-radius: 999px; color: var(--gold); background: rgba(224,173,82,.08); font-size: 12px; font-weight: 800; }
+.download-card + .download-card { margin-top: 16px; }
+.store-download-card { border-color: rgba(224,173,82,.62); box-shadow: 0 0 0 1px rgba(224,173,82,.12); }
+.backup-download-card { background: rgba(16,29,48,.6); }
+.download-actions { display: grid; gap: 10px; justify-items: center; }
+.text-link, .inline-link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.support-panel { max-width: 760px; padding: 34px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
 
 .site-footer { padding: 34px 0; border-top: 1px solid rgba(255,255,255,.08); color: var(--muted); font-size: 13px; }
 .footer-grid { display: flex; justify-content: space-between; gap: 24px; }
@@ -158,5 +164,6 @@ td { color: #b9c6d6; }
   .feature-grid, .steps, .price-grid { grid-template-columns: 1fr; }
   .section { padding: 58px 0; }
   .download-card { grid-template-columns: 1fr; }
+  .download-actions { justify-items: start; }
   .footer-grid { flex-direction: column; }
 }

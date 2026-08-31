@@ -30,7 +30,7 @@ async function proxyDownload(request) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if ((url.pathname === "/download" || url.pathname === "/download/") && ["GET", "HEAD"].includes(request.method)) {
+    if ((url.pathname === "/download-installer" || url.pathname === "/download-installer/") && ["GET", "HEAD"].includes(request.method)) {
       try {
         return await proxyDownload(request);
       } catch {

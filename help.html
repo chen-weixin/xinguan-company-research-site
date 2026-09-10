@@ -8,12 +8,13 @@
   <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="help-page">
   <header class="site-header"><nav class="container nav" aria-label="主导航"><a class="brand" href="index.html"><span class="brand-mark">鑫</span>鑫观点企业研究</a><div class="nav-links"><a href="index.html#features">产品能力</a><a href="index.html#pricing">订阅价格</a><a aria-current="page" href="help.html">使用帮助</a><a class="nav-cta" href="download.html">软件下载</a></div></nav></header>
   <main>
-    <section class="page-hero"><div class="container"><p class="eyebrow">HELP CENTER</p><h1>使用帮助</h1><p>从安装、配置大模型到生成和导出报告，按下面的顺序操作即可。遇到问题时，先根据页面提示确定是数据、模型还是网络环节失败。</p></div></section>
+    <section class="page-hero"><div class="container"><p class="eyebrow"><span class="eyebrow-dot"></span>HELP CENTER · v0.2.91</p><h1>从输入股票，<br><em>到一份看得懂的研究。</em></h1><p>从安装、配置大模型到生成报告、查看可视化和视频讲解，按下面的顺序操作即可。遇到问题时，先根据页面提示确定是数据、模型还是网络环节失败。</p><div class="help-hero-actions"><a class="button primary" href="download.html">下载软件 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#quick-start">先看快速上手</a></div></div></section>
+    <section class="help-quick" id="quick-start"><div class="container"><div class="help-quick-heading"><div><p class="section-kicker">QUICK START</p><h2>四步开始第一次研究</h2></div><p>软件界面已经改为浅色，所有主要操作都集中在左侧工作区，研究结果、图表和视频讲解在右侧逐步生成。</p></div><div class="help-quick-grid"><a class="help-quick-card" href="#install"><b>01</b><strong>安装并启动</strong><span>安装 v0.2.91，等待研究服务启动。</span><i aria-hidden="true">↗</i></a><a class="help-quick-card" href="#model"><b>02</b><strong>配置模型</strong><span>保存 API 设置，再测试连接是否成功。</span><i aria-hidden="true">↗</i></a><a class="help-quick-card" href="#research"><b>03</b><strong>输入股票代码</strong><span>开始完整企业研究，等待资料核验。</span><i aria-hidden="true">↗</i></a><a class="help-quick-card" href="#video"><b>04</b><strong>看报告与视频</strong><span>阅读图表结论，也可以播放视频讲解。</span><i aria-hidden="true">↗</i></a></div></div></section>
     <div class="container content-layout">
-      <aside class="toc"><strong>帮助目录</strong><a href="#install">安装与启动</a><a href="#model">大模型设置</a><a href="#research">开始企业研究</a><a href="#progress">进度与资料</a><a href="#report">报告与 PDF</a><a href="#history">历史研究</a><a href="#update">软件更新</a><a href="#troubleshooting">故障排查</a></aside>
+      <aside class="toc"><strong>帮助目录</strong><a href="#install">安装与启动</a><a href="#model">大模型设置</a><a href="#research">开始企业研究</a><a href="#progress">进度与资料</a><a href="#report">报告与 PDF</a><a href="#video">视频讲解</a><a href="#history">历史研究</a><a href="#update">软件更新</a><a href="#troubleshooting">故障排查</a></aside>
       <article class="prose">
         <section id="install">
           <h2>一、安装与首次启动</h2>
@@ -33,6 +34,7 @@
           <h2>三、开始企业研究</h2>
           <ol class="help-steps"><li>在“只需填写股票代码”处输入 6 位 A 股代码，例如 <code>600519</code>。</li><li>点击“开始企业研究”。</li><li>确认本周免费额度或当前订阅权益。</li><li>保持软件运行，等待资料采集、同行核验、多轮推演和报告生成完成。</li></ol>
           <p>系统会先识别企业的业务、行业和研究重点，再选择同行及补采资料。不同企业的讨论议题、报告章节和图表会有所不同。</p>
+          <div class="feature-note"><strong>只做可视化分析</strong><span>如果历史报告已经存在，可在本机测试区复用已有研究，只重新生成图表、图形和可视化分析，不必重复完整取数。</span></div>
         </section>
         <section id="progress">
           <h2>四、查看进度和资料量</h2>
@@ -45,18 +47,25 @@
           <p>研究成功后，页面只展示一份正式报告成品。资料统计和研究过程作为参考区存在，不会重复进入导出的 PDF。</p>
           <ul><li>报告标题为企业简称加一句话核心结论。</li><li>图表插入支持其结论的正文位置。</li><li>资料来源和证据附录位于文章后部。</li><li>封面和免责声明会注明 AI 生成、模型差异与非投资依据。</li></ul>
           <p>点击“导出 PDF”即可下载。若导出失败，先确认报告已完整生成，再根据错误提示检查字体、渲染服务或磁盘空间。</p>
+          <div class="callout">可视化会按章节内容选择表达方式：行业与业务适合关系图、思维导图或 Mermaid；财务适合柱状图、组合图和曲线图；估值与同行对比适合散点图、箱线图、雷达图等，不会固定使用同一种模板。</div>
+        </section>
+        <section id="video">
+          <h2>六、视频讲解与口播</h2>
+          <p>报告生成后可以创建视频讲解。视频会把口播、字幕、报告画面和重点图表按章节同步推进，适合快速听完一份研究，也方便回看重点判断。</p>
+          <div class="video-help-grid"><div><strong>播放控制</strong><span>支持播放、暂停、重播、静音和全屏。</span></div><div><strong>内容同步</strong><span>口播跟随章节，画面跟随报告和图表。</span></div><div><strong>重建新版</strong><span>报告或可视化更新后，可以重新生成最新讲解。</span></div></div>
+          <p>如果视频没有生成，先确认报告已完整生成、模型连接正常，并检查当前章节是否有可播放的讲解内容。</p>
         </section>
         <section id="history">
-          <h2>六、历史研究</h2>
+          <h2>七、历史研究</h2>
           <p>左侧“历史研究”显示企业简称、股票代码和短日期。点击记录可重新打开同一份报告；点击右侧“×”可删除指定记录。删除后不可恢复。</p>
         </section>
         <section id="update">
-          <h2>七、软件更新</h2>
+          <h2>八、软件更新</h2>
           <p>软件启动后会自动检查新版本。没有更新时不显示更新卡片；发现更新时点击“立即更新”，安装完成后重新启动软件。</p>
           <p>也可以在<a href="download.html">软件下载页</a>查看当前公开版本和更新内容。</p>
         </section>
         <section id="troubleshooting">
-          <h2>八、故障排查</h2>
+          <h2>九、故障排查</h2>
           <h3>提示“企业研究服务未连接”</h3><p>完全退出软件后重新打开，等待服务启动；若仍失败，检查安全软件是否拦截程序组件。</p>
           <h3>资料长时间没有变化</h3><p>观察当前环节和预计时间；若单一环节明显超时，可停止后重新研究。重复失败时记录股票代码、失败环节和页面错误信息。</p>
           <h3>关键资料不足</h3><p>系统会自动更换来源并重试。多轮补采后仍不足时会停止并列出缺失资料，不应生成报告。</p>

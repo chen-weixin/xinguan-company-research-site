@@ -1,5 +1,5 @@
-const RELEASE_ASSET = "https://github.com/chen-weixin/xinguandian-enterprise-research-releases/releases/download/v0.2.69/xinguandian-enterprise-research_0.2.69_x64-setup.exe";
-const DOWNLOAD_NAME = "xinguandian-enterprise-research_0.2.69_x64-setup.exe";
+const RELEASE_ASSET = "https://github.com/chen-weixin/xinguandian-enterprise-research-releases/releases/download/v0.2.91/xinguandian-enterprise-research_0.2.91_x64-setup.exe";
+const DOWNLOAD_NAME = "xinguandian-enterprise-research_0.2.91_x64-setup.exe";
 
 async function proxyDownload(request) {
   const upstreamHeaders = new Headers();
@@ -32,7 +32,7 @@ export default {
     const url = new URL(request.url);
     const isInstallerPath = url.pathname === "/download-installer" ||
       url.pathname === "/download-installer/" ||
-      url.pathname === `/releases/download/v0.2.69/${DOWNLOAD_NAME}`;
+      url.pathname === `/releases/download/v0.2.91/${DOWNLOAD_NAME}`;
     if (isInstallerPath && ["GET", "HEAD"].includes(request.method)) {
       try {
         return await proxyDownload(request);

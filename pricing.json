@@ -11,7 +11,7 @@
     { "code": "report_month", "name": "报告版·月版", "amount_fen": 3800, "display_price": "38 元 / 1个月", "term": "month", "feature": "report" },
     { "code": "report_year", "name": "报告版·年版", "amount_fen": 28800, "display_price": "288 元 / 1年", "term": "year", "feature": "report" },
     { "code": "visual_month", "name": "可视化专业版·月版", "amount_fen": 5800, "display_price": "58 元 / 1个月", "term": "month", "feature": "visual", "includes_report": true, "upgrade_difference_fen": 2000 },
-    { "code": "visual_year", "name": "可视化专业版·年版", "amount_fen": 48800, "display_price": "488 元 / 1年", "term": "year", "feature": "visual", "includes_report": true, "upgrade_difference_fen": 20000 },
+    { "code": "visual_year", "name": "可视化专业版·年版", "amount_fen": 48800, "display_price": "488 元 / 1年", "term": "year", "feature": "visual", "includes_report": true, "upgrade_difference_fen": 20000 }
   ],
   "auto_renew": false
 }
